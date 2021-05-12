@@ -1,0 +1,39 @@
+version: "3"
+
+services:
+
+  model-ocr:
+    image: tensorflow/serving:latest
+    volumes:
+      - ./serving/ocr:/models/ocr
+    ports:
+      - "8500:8500"
+    environment:
+      MODEL_NAME: ocr
+
+  model-east:
+    image: tensorflow/serving:latest
+    volumes:
+      - ./serving/east:/models/east
+    ports:
+      - "8501:8500"
+    environment:
+      MODEL_NAME: east
+
+  model-angle:
+    image: tensorflow/serving:latest
+    volumes:
+      - ./serving/angle:/models/angle
+    ports:
+      - "8502:8500"
+    environment:
+      MODEL_NAME: angle
+
+  model-maskrcnn:
+    image: tensorflow/serving:latest
+    volumes:
+      - ./serving/maskrcnn:/models/maskrcnn
+    ports:
+      - "8503:8500"
+    environment:
+      MODEL_NAME: maskrcnn

@@ -1,0 +1,18 @@
+fastapi== 0.54.0
+uvicorn== 0.11.3
+pydantic== 1.4
+Pillow== 6.1.0
+tensorflow== 1.12.0
+tensorflow-serving-api== 1.12.0
+keras== 2.2.4
+numpy== 1.15.4
+scipy== 1.1.0
+scikit-image== 0.16.2
+imageio== 2.3.0
+requests== 2.23.0
+opencv-python== 4.2.0.34
+urllib3==1.22
+pyzbar==0.1.8
+pandas==1.0.3
+python-Levenshtein==0.12.0
+transitions==0.8.1
